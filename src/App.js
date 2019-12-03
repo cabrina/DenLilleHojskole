@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AppHeader from './components/Header/AppHeader';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import LangeKurser from './components/Body/LangeKurser/LangeKurser';
+import KorteKurser from './components/Body/KorteKurser/KorteKurser';
+import Studieture from './components/Body/Studieture/Studieture';
+import Kursuscenter from './components/Body/Kursuscenter/KursusCenter';
+import OmSkolen from './components/Body/OmSkolen/OmSkolen';
+import Home from './components/Body/Home/Home'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <AppHeader />
+          <Route exact path="/" component={Home}/>
+          <Route path="/LangeKurser" component={LangeKurser}/>
+          <Route path="/KorteKurser" component={KorteKurser}/>
+          <Route path="/Studieture" component={Studieture}/>
+          <Route path="/Kursuscenter" component={Kursuscenter}/>
+          <Route path="/OmSkolen" component={OmSkolen}/>
+      </Router>
+      
     </div>
   );
 }
