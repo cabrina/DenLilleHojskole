@@ -340,6 +340,7 @@ main {
     max-width: 1000px;
     margin: 50px auto;
     font-family: $pri-font;
+    padding-bottom: 30px;
 
     h1 {
         font-size: 35px;
@@ -348,6 +349,24 @@ main {
 
     p {
         font-size: 25px;
+    }
+
+    .kursusliste {
+        h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        ul {
+            list-style-type: none;
+            padding-bottom: 30px;
+            font-weight: bold;
+    
+            li {
+                font-size: 23px;
+                text-decoration: underline;
+            }
+        }
+    
     }
     
     div {
@@ -361,15 +380,10 @@ main {
             font-size: 25px;
         }
 
-    }
-    ul {
-        list-style-type: none;
-        padding-bottom: 30px;
-
-        li {
-            font-size: 23px;
-            text-decoration: underline;
+        &:last-of-type {
+            margin-bottom: 50px;
         }
+
     }
 
     button {
