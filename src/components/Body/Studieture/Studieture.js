@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Studieture() {
     return (
-        <div>
+        <div className="studieture">
             Studieture
         </div>
     )

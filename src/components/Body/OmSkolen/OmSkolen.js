@@ -18,7 +18,7 @@ export default function OmSkolen() {
                     <li>Forårs-semester 2020, 19. januar til 13. juni 2020, 21 uger</li>
                     <li>Forårs-semester 2020, 23. februar til 13. juni 2020, 16 uger</li>
                 </ul>  
-                <button><i class="fas fa-check"></i>Tilmeld dig her</button>
+                <button><i className="fas fa-check"></i>Tilmeld dig her</button>
             </div>
         </div>
     )
