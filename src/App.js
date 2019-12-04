@@ -6,19 +6,21 @@ import KorteKurser from './components/Body/KorteKurser/KorteKurser';
 import Studieture from './components/Body/Studieture/Studieture';
 import Kursuscenter from './components/Body/Kursuscenter/KursusCenter';
 import OmSkolen from './components/Body/OmSkolen/OmSkolen';
-import Home from './components/Body/Home/Home'
+import AppFooter from './components/Footer/AppFooter';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <AppHeader />
-          <Route exact path="/" component={Home}/>
-          <Route path="/LangeKurser" component={LangeKurser}/>
-          <Route path="/KorteKurser" component={KorteKurser}/>
-          <Route path="/Studieture" component={Studieture}/>
-          <Route path="/Kursuscenter" component={Kursuscenter}/>
-          <Route path="/OmSkolen" component={OmSkolen}/>
+          <main>
+            <Route exact path="/" component={OmSkolen}/>
+            <Route path="/LangeKurser" component={LangeKurser}/>
+            <Route path="/KorteKurser" component={KorteKurser}/>
+            <Route path="/Studieture" component={Studieture}/>
+            <Route path="/Kursuscenter" component={Kursuscenter}/>
+          </main>
+        <AppFooter />
       </Router>
       
     </div>

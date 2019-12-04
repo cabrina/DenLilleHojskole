@@ -18,7 +18,7 @@ export default function Navbar() {
                     <Link to="/Kursuscenter">Kursuscenter</Link>
                 </li>
                 <li>
-                    <Link to="OmSkolen">Om skolen</Link>
+                    <Link to="/">Om skolen</Link>
                 </li>
             </ul>
         </nav>

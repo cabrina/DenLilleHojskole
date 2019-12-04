@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function Search() {
     return (
-        <form action="/">
-        </form>
+        <div className="search">
+            <i class="fas fa-search"></i>
+        </div>
     )
 }
