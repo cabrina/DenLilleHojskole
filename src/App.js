@@ -6,6 +6,8 @@ import KorteKurser from './components/Body/KorteKurser/KorteKurser';
 import Studieture from './components/Body/Studieture/Studieture';
 import Kursuscenter from './components/Body/Kursuscenter/KursusCenter';
 import OmSkolen from './components/Body/OmSkolen/OmSkolen';
+import Priser from './components/Body/Priser/Priser'
+import Linjefag from './components/Body/Linjefag/Linjefag'
 import AppFooter from './components/Footer/AppFooter';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
             <Route path="/KorteKurser" component={KorteKurser}/>
             <Route path="/Studieture" component={Studieture}/>
             <Route path="/Kursuscenter" component={Kursuscenter}/>
+            <Route path="/Priser" component={Priser} />
+            <Route path="/Linjefag" component={Linjefag} />
           </main>
         <AppFooter />
       </Router>

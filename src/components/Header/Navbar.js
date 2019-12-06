@@ -5,8 +5,12 @@ export default function Navbar() {
     return (
         <nav>
             <ul>
-                <li>
+                <li className="dropdown">
                     <Link to="/LangeKurser">Lange kurser</Link>
+                    <div className="dropdown-content">
+                        <Link to="/Priser">Priser og tilskud</Link>
+                        <Link to ="/Linjefag">Linjefag</Link>
+                    </div>
                 </li>
                 <li>
                     <Link to="/KorteKurser">Korte kurser</Link>

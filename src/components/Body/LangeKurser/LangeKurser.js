@@ -3,6 +3,8 @@ import React from 'react'
 export default function LangeKurser() {
     return (
         <div className="langekurser">
+            <img src="images/lange-kurser.PNG" alt=""/>
+            <div className="content">
             <h1>LANGE KURSER – FORLØB</h1>
             <div className="kursusliste">
                 <h2>kommende elevhold</h2>
@@ -38,5 +40,7 @@ export default function LangeKurser() {
             </div>
             <button><i className="fas fa-check"></i>Tilmeld dig her</button>
         </div>
+            </div>
+            
     )
 }
